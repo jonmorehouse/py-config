@@ -2,7 +2,21 @@
 import os
 import sys
 
+# import utilities version etc
 from utilities import __version__
+
+# import setuptools as needed
+try:
+	from setuptools import setup
+	from setuptools.command.test import test as TestCommand
+	
+except ImportError:
+
+	from distutils.core import setup
+
+with open("readme.rst", "r") as _file:
+
+	long_description = _file.read()
 
 # setup project
 setup(
