@@ -14,22 +14,24 @@ except ImportError:
 
 	from distutils.core import setup
 
+# grab our readme generated rst for this project
 with open("readme.rst", "r") as _file:
 
 	long_description = _file.read()
 
-# setup project
+# setup project 
 setup(
 	
 	name="utilities",
 	version = __version__,
 	description = "General python utilities for projects",
+	long_description = long_description,
 	url = "http://github.com/jonmorehouse/python-utilities",
 	author = "Jon Morehouse",
 	author_email = "morehousej09@gmail.com",
 	keywords = ["Utilities"],
 	license = "MIT",
-	packages = ["redis"],
+	packages = ["utilities"],
 
 	classifiers=[
 		'Development Status :: 5 - Production/Stable',
