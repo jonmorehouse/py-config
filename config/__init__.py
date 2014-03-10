@@ -7,6 +7,6 @@ VERSION = tuple(map(int, __version__.split('.')))
 
 # all elements here are loaded
 __all__ = [
-	
+
 	Config
 ]
