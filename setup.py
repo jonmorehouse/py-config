@@ -43,7 +43,7 @@ setup(
     license = "MIT",
     packages = ["config"],
     install_requires = requirements,
-    test_requires = test_requirements,
+    tests_require = test_requirements,
     test_suite = "nose.collector",
     classifiers=[
             'Development Status :: 4 - Beta',
