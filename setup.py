@@ -42,6 +42,7 @@ setup(
     keywords = ["configuration", "management"],
     license = "MIT",
     packages = ["config",],
+    package_data = {"config": ["version"], "": ["requirements.txt", "test-requirements.txt"]},
     install_requires = requirements,
     tests_require = test_requirements,
     test_suite = "nose.collector",

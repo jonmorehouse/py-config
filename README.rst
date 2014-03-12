@@ -1,5 +1,5 @@
-Python Utilities
-================
+Python Config
+=============
 
 Config Class
 ------------
