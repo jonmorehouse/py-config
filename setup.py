@@ -4,7 +4,7 @@ import sys
 
 with open("config/version", "r") as f:
 
-  version = f.read()
+  version = f.read().strip()
 
 # import setuptool requirements
 try:
@@ -41,7 +41,7 @@ setup(
     author_email = "morehousej09@gmail.com",
     keywords = ["configuration", "management"],
     license = "MIT",
-    packages = ["config"],
+    packages = ["config",],
     install_requires = requirements,
     tests_require = test_requirements,
     test_suite = "nose.collector",
